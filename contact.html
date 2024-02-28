@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eco Paper</title>
+    <link rel="stylesheet" href="medai.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.style.css" />
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+</head>
+
+<body>
+    <div class="smooth-scroll-wrapper">
+        <div class="content bg-primary-1">
+            <nav class="spaced-flex bg-dark-1 light-1">
+                <div class="left-nav auto-flex">
+                    <img src="./assets/img/LOGO444.jpg" height="50px" width="50px" class="mr-5"><h1 id="site-title"><span class="primary-1">SOIL</span>cane</h1>
+                </div>
+                <div class="right-nav auto-flex">
+                    <ul class="dedecor spaced-flex auto-flex font2">
+                        <li class="mx-5 animated-ul py-2"><a href="index.html" class="dedecor">Home</a></li>
+
+                        <li class="ml-5 animated-ul py-2"><a href="contact.html" class="dedecor">Contact</a></li>
+                    </ul>
+                </div>
+                <div id="mobile-nav">
+                    <i class="fa fa-bars primary-1" onclick="toggleMenu(event)"></i>
+                    <ul id="mobile-menu" class="dedecor column-flex font2">
+                        <li class="mx-auto animated-ul py-2"><a href="" class="dedecor">Home</a></li>
+
+                        <li class="mx-auto animated-ul py-2"><a href="contact.html" class="dedecor">Contact</a></li>
+                        <li class="mx-auto my-4 py-2"><i class="fa fa-xmark large primary-3"
+                                onclick="toggleMenu(event)"></i></li>
+                    </ul>
+                </div>
+            </nav>
+            <section id="loading" class="auto-flex">
+                <i class="fa fa-spinner secondary-1 boomer"
+                    style="font-size: 100px ; position:relative; bottom:10%;"></i>
+            </section>
+            <section id="contact-contact" class="spaced-flex default-padding bg-light-1 dark-1 stack">
+                <div class="mr-5 py-5 w-40 mw-100">
+                    <h1 class="impress my-5">Contact Us</h1>
+                    <p class="my-2 primary-4">"We are always listening"
+                    </p>
+                </div>
+                <div class="w-60 mw-100 my-3">
+                    <form name="contactform" method="post" class="simple-contact-form mx-auto default-padding font3">
+
+                        <div class="w-100 mx-2">
+                            <label class="block">Name</label>
+                            <input class="py-2 my-1 px-3 w-80 input" type="text" name="cname" placeholder="Johon Doe">
+                        </div>
+                        <div class="w-100 mx-2">
+                            <label class="block">Email</label>
+                            <input class="py-2 my-1 px-3 w-80 input" type="email" name="cemail"
+                                placeholder="samplemail@mail.com">
+                        </div>
+
+
+                        <div class="w-80 mx-2">
+                            <label class="block">Phone Number</label>
+                            <input class="py-2 my-1 px-3 w-50 input" type="tel" name="cnumber"
+                                placeholder="+91 998 8776 655">
+                        </div>
+
+                        <div class="mx-2">
+                            <label class="block">Select a catogory</label>
+                            <select name="cselect" id="csel" class="my-1 block px-2 py-1">
+                                <option>Business</option>
+                                <option>Inividual</option>
+                                <option>Press</option>
+                                <option>other</option>
+                            </select>
+                        </div>
+
+                        <div class="mx-2">
+                            <label class="block">Message:</label>
+                            <textarea name="cmessage" class="msgarea w-90 mw-100 my-3" rows="8"></textarea>
+                            <input type="submit" name='send' class="round-btn my-5" id="sendbutton" value="Send">
+                        </div>
+                    </form>
+
+                    <div class="light-color" id="alert">
+                    </div>
+
+                </div>
+            </section>
+            <h2 class="mt-5 center">Other Contacts</h2>
+            <section class="default-padding bg-primary-1 light-1 spaced-flex stack">
+
+                <div class="card bg-primary-2 light-1 px-5 py-3 center auto-flex column-flex">
+                    <i class="fa fa-phone large"></i>
+                    <h3 class="my-5">Contact</h3>
+                    <h4 class="medium">+44 440 4040 440</h4>
+                    <h4 class="medium">+44 441 4411 411</h4>
+
+                </div>
+                <div class="card bg-primary-2 light-1 px-5 py-5 center auto-flex column-flex">
+                    <i class="fa fa-home large"></i>
+                    <h3>Address</h3>
+                    <h4 class="medium">22B Baker Street,<br> London, <br> NW1 6XE</h4>
+                </div>
+                <div class="card bg-primary-2 light-1 px-5 py-5 center auto-flex column-flex">
+                    <i class="fa fa-envelope large"></i>
+                    <h3>Email</h3>
+                    <h4 class="medium">ecopaper1@mail.com</h4>
+                    <h4 class="medium">ecopaper2@mail.com</h4>
+                </div>
+
+            </section>
+            <section class="bg-primary-1 defalut-padding">
+
+            </section>
+            <footer class="default-padding bg-dark-1 light-1">
+
+                <div class="container spaced-flex bg-dark-2 stack" style="border-radius: 15px;">
+                    <div class="w-40 mw-100 footer-outro">
+                        <h3><span class="primary-1">SOIL</span>cane</h3>
+                        <p class="my-4">
+                            Soilcane is an eco-friendly firm that aims to reduce soil pollution, water pollution, air
+                            pollution and deforestation. These natural materials are made from eco-waste and not from
+                            tree.
+                        </p>
+                        <div class="my-2 start-flex light-1">
+                            <a class="dedecor" target="_blank" href="https://www.facebook.com/Soilcane/"><i
+                                    class="fab fa-facebook large" style="margin-right: 4px;"></i></a>
+                            <a class="dedecor" target="_blank"
+                                href="https://www.instagram.com/soilcane/?igshid=Yzg5MTU1MDY%3D"><i
+                                    class="fab fa-instagram large mx-2"></i></a>
+                            <a class="dedecor" target="_blank"
+                                href="https://www.instagram.com/soilcane/?igshid=Yzg5MTU1MDY%3D"><i
+                                    class="fab fa-twitter large mx-2"></i></a>
+                            <a class="dedecor" target="_blank"
+                                href="https://www.instagram.com/soilcane/?igshid=Yzg5MTU1MDY%3D"><i
+                                    class="fa fa-envelope large mx-2" onclick="openMail()"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="spaced-flex start-flex">
+                        <div class="container">
+                            <h4>Quick Links</h4>
+                            <ul class="dedecor my-10 small center">
+                                <li class="my-2">Support</li>
+                                <li class="my-2">Privacy Policy</li>
+                                <li class="my-2">Terms of use</li>
+                                <li class="my-2">Refund Policy</li>
+                            </ul>
+                        </div>
+                        <div class="container">
+                            <h4>Resources</h4>
+                            <ul class="dedecor my-10 small center">
+                                <li class="my-2">Catalogue</li>
+                                <li class="my-2">Products</li>
+                                <li class="my-2">Careers</li>
+                                <li class="my-2">Credits</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="spaced-flex start-flex">
+
+                        <div class="container">
+                            <h4>Get in touch</h4>
+                            <div class="my-10">
+                                <div class="spaced-flex start-flex my-2 small">
+                                    <h5 class="small">Call:</h5><span class="primary-3 ml-5">+91 9035304071</span>
+                                </div>
+                                <div class="spaced-flex start-flex my-2 small">
+                                    <h5 class="small">Email:</h5><span class="primary-3 ml-5">info@soilcane.com</span>
+                                </div>
+                                <div class="spaced-flex start-flex my-2 small">
+                                    <h5 class="small">Address:</h5><span class="primary-3 ml-5">844 10th cross road,
+                                        <br>16th Main Rd, BTM 2nd Stage<br>Bengaluru, Karnataka 560076
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="spaced-flex mt-5 stack center" id="credits">
+                    <div>
+                        <h5>All Rights Reserverd &copy; <span class="primary-1">SOIL</span>cane 2023</h5>
+                    </div>
+                    <div>Website by <a href="https://www.linkedin.com/in/sahil-yadav-442079204/"
+                            class="dedecor">SAHIL</a></div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/fontawesome/js/all.min.js"></script>
+</body>
+
+</html>

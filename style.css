@@ -1,0 +1,523 @@
+html,
+body {
+    position: relative;
+    overflow: hidden;
+}
+
+nav {
+    position: relative;
+    z-index: 99;
+    padding: 2% 10%;
+}
+
+#site-title {
+    font-size: 24px;
+}
+
+#mobile-nav {
+    display: none;
+    z-index: 1;
+
+}
+
+.default-padding {
+    padding: 3% 10% 3% 10%;
+}
+
+
+#loading {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+
+    background-color: #000;
+
+}
+
+.boomer {
+    transition: all ease-in-out;
+    animation: boomer 2s infinite ease-out;
+}
+
+@keyframes boomer {
+    0% {
+
+        transform: rotate(0deg);
+    }
+
+
+
+    100% {
+
+        transform: rotate(360deg);
+    }
+}
+
+#mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    width: 100%;
+    height: 90vh;
+    z-index: 1;
+    padding: 15% 0;
+    transition: all 0.3s ease-in-out;
+    background-color: #000;
+}
+
+.mobile-menu-active {
+    left: 0 !important;
+}
+
+.accordian-toggle {
+    position: absolute;
+    top: -10px;
+    background: none;
+    padding: 5px 10px;
+    color: #fff;
+    border: none;
+    font-size: 36px;
+    font-weight: bolder;
+    z-index: 1;
+    right: 0;
+    transition: all 0.4s ease;
+    transform: rotateZ(0deg);
+}
+
+.accordian-toggle-active {
+    transform: rotateZ(45deg) !important;
+}
+
+#Highlights li h4 {
+    position: relative;
+    z-index: 0;
+}
+
+#Highlights li h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 4px;
+    bottom: -0px;
+    background: linear-gradient(to right, var(--primary-1), 70%, var(--dark-2));
+}
+
+
+.accordian {
+    display: block;
+    height: 0;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.accordian-visible {
+    animation: accordian 1s ease;
+    overflow: visible;
+    margin-top: 10px;
+    height: 50px !important;
+}
+
+.fadeIn {
+    position: relative;
+    transition: 0.3s all ease;
+    opacity: 0;
+}
+
+.fadeUp {
+    position: relative;
+    transition: 0.3s all linear;
+    opacity: 0;
+    bottom: -200px;
+}
+
+.carousal-card {
+    position: relative;
+    height: 300px;
+    z-index: 1;
+    border-radius: 30px;
+
+}
+
+.carousal-card img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+    border-radius: 30px;
+    top: 0;
+    left: 0;
+}
+
+.carousal-card .container {
+    position: absolute;
+   bottom: 0%;
+    text-shadow: -1px -1px 40px #000, 0 0 10px #fff;
+    padding: 10px;
+}
+
+
+.come-in-l {
+    position: relative;
+    animation: come-in-l 1s ease-in-out;
+}
+
+.come-in-r {
+    position: relative;
+    ;
+    animation: come-in-r 1s ease-in-out;
+}
+
+.come-up {
+    position: relative;
+    animation: come-up 1s ease-in-out;
+}
+
+.fade-up {
+    position: relative;
+    animation: fade-up 1s ease-in-out;
+}
+
+#hook-image {
+    opacity: 0;
+    transition: all ease-in-out 1s;
+}
+
+#About,
+#Products {
+    position: relative;
+    opacity: 0;
+    transition: all ease-in-out 1s;
+}
+
+@keyframes come-in-l {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes come-in-r {
+    0% {
+        right: -100%;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes come-up {
+    0% {
+        top: 200px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes fade-up {
+    0% {
+        top: 15%;
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.footer-outro {
+    border-right: 5px solid var(--primary-1);
+    padding-right: 20px;
+}
+
+.testimoniol-container {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    padding: 5% 2%;
+    border-top: 3px solid var(--primary-4);
+    border-bottom: 3px solid var(--primary-4);
+}
+
+.item-container {
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.testimoniol-item {
+    white-space: normal;
+    display: inline-block;
+    width: 90%;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.testimoniol-arrow-left {
+    position: absolute;
+    text-align: center;
+    left: -10%;
+    top: 50%;
+    font-size: 30px;
+    padding: 10px;
+    background: var(--dark-2);
+    border-radius: 5px;
+    z-index: 99;
+
+}
+
+.testimoniol-arrow-right {
+    position: absolute;
+    text-align: center;
+    right: -10%;
+    top: 50%;
+    font-size: 30px;
+    padding: 10px;
+    background: var(--dark-2);
+    border-radius: 5px;
+    z-index: 99;
+
+}
+
+#Timeline {
+    position: relative;
+    z-index: 1;
+}
+
+#makearule {
+    position: absolute;
+    margin: 0 auto;
+    left: 50%;
+    right: 50%;
+    top: 10%;
+    z-index: -1;
+    width: 6px;
+    border-radius: 10px;
+    height: 1700px;
+    transition: all 1s ease-in-out;
+    background-color: var(--dark-1);
+}
+
+.timeline-container {
+    position: relative;
+    padding: 5%;
+}
+
+.timeline-item {
+    width: 40%;
+    border-radius: 10px;
+    background-color: var(--primary-2);
+    margin: 10px;
+    margin-left: auto;
+    padding: 2%;
+    z-index: 1;
+}
+
+.timeline-date {
+    position: absolute;
+    padding: 5px;
+    border: 5px solid var(--primary-2);
+    background-color: var(--dark-1);
+}
+.timeline-date h4{
+    font-size: 16px;
+    font-weight: 500;
+}
+.timeline-date h5{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.timeline-heading {
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.timeline-content {
+    font-weight: 400;
+}
+
+.team-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.team-item {
+    width: 300px;
+    height: 300px;
+    margin: 15px 0;
+    border: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.team-info {
+    position: absolute;
+    bottom: 0%;
+    padding: 10px;
+    color: var(--light-1);
+
+}
+
+.team-head {
+    font-weight: 600;
+}
+
+.team-descreption {
+    font-weight: 500;
+}
+
+.team-image {
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    z-index: -1;
+    object-position: 0% 0%;
+    left: 0;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    transition: object-position ease-in-out 0.8s;
+}
+
+.team-image:hover {
+    box-shadow: 0 0 20px 0px var(--dark-1);
+}
+.simple-contact-form{
+    border-radius: 20px;
+    background-color: var(--primary-1);
+    color: var(--dark-1);
+    padding:5%;
+}
+
+
+
+
+
+
+.flip-card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 0;
+}
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+
+
+.flip-card {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 16vw;
+    height: 26vw;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.flip-card:hover {
+    transform: rotateY(180deg);
+}
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+.thefront {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16vw;
+    height: 26vw;
+    backface-visibility: hidden;
+    overflow: hidden;
+    z-index: 0;
+    background-color: var(--primary-3);
+    padding: 10px;
+
+
+}
+
+
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.theback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16vw;
+    height: 26vw;
+    backface-visibility: hidden;
+    overflow: hidden;
+    z-index: 0;
+    padding: 10px;
+    background-color: var(--primary-3);
+    transform: rotateY(180deg);
+}
+
+
+.flip-card i {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px 15px;
+}
+
+
+/*Cards*/
+
+/*1ST CARD*/
+.flip-card-1-front {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-left: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    color: var(--dark-1);
+    overflow: hidden;
+}
+
+
+
+
+
+.flip-card-1-front h4::before {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: 8px solid var(--dark-1);
+    bottom: 15%;
+    left: -10%;
+
+
+}
+
+
+
+
+
+.flip-card-1-back {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--primary-3);
+    color: var(--dark-1);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
